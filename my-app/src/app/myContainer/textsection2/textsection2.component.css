@@ -1,0 +1,35 @@
+.txt-sec{
+    width:45%;
+    background-color:mediumslateblue;
+    margin: 10px 5px;
+    padding:10px;
+    float: left;
+}
+.header-red{
+    color:oldlace;
+    font-size: 18px;
+}
+
+.txt-sec p{
+    color:purple;
+    font-size: 16px;
+    padding:10px; 
+    line-height: 30px;
+    
+    
+}
+.btn-red{
+    background-color: red;
+    color: rosybrown;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    float:right;
+}
+.btn-red:hover{
+    background-color: springgreen;
+}
+
+.clear{
+    clear:both;
+}
