@@ -1,0 +1,83 @@
+1Class binding usign property binding 
+<div 
+class="box" 
+[class.myclass]="true">
+ Class Binding
+</div>
+
+2 check in inspect element keeping false . you will see myclass is removed
+    <div 
+    class="box" 
+    [class.myclass]="false">
+    Class Binding
+ </div>
+ 
+
+3 //we can control [class.myclass] dynamically also
+    <div 
+    class="box" 
+    [class.myclass]="mypro">
+    Class Binding
+ </div>
+
+
+ 4 Applying style.margin dynamically  using property binding
+<div 
+class="box" 
+[style.margin]="myStyle1">
+Class Binding
+</div>
+
+
+
+ 5 We can use turnery operator Applying style.margin dynamically  using property binding
+<div 
+class="box" 
+[style.margin]= "isActive? myStyle1 : '5px'">
+Class Binding
+</div>
+
+
+In earlier examples we were binding only single style or class 
+but we can use  Angular inbuild directives... so we can bind multiple class and style
+ngStyle
+ngClass
+
+
+6 [ngClass] use it and check in inspect element
+<div 
+class="box" 
+[ngClass]="'class1 class2 class3'">
+Class Binding
+</div>
+
+
+
+7 ngClass directive use[ngClass] ="mtlclasses" we can also defin multiple classes using method that we will keep
+in ts file
+<div 
+class="box" 
+[ngClass]="mtlclasses">
+Class Binding
+</div>
+
+
+
+8. ngStyle Directive use
+
+<div 
+class="box" 
+[ngStyle]="{
+  'background':'red',
+  'border':'10px solid green'
+}">
+Class Binding
+</div>
+
+
+9. ngStyle other option ..Instead of style inline we will write in propertty
+<div 
+class="box" 
+[ngStyle]="mtlStyle">
+Class Binding
+</div>
