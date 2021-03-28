@@ -7,6 +7,7 @@ import { TopNavbarComponent } from './myContainer/top-navbar/top-navbar.componen
 import { HeaderComponent } from './myContainer/header/header.component';
 import { Textsection1Component } from './myContainer/textsection1/textsection1.component';
 import { Textsection2Component } from './myContainer/textsection2/textsection2.component';
+import { DatabindComponent } from './databind/databind.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { Textsection2Component } from './myContainer/textsection2/textsection2.c
     TopNavbarComponent,
     HeaderComponent,
     Textsection1Component,
-    Textsection2Component
+    Textsection2Component,
+    DatabindComponent,
+    
   ],
   imports: [
     BrowserModule

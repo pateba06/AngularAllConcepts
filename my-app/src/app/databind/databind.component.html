@@ -1,0 +1,110 @@
+<h2>stringInterpolation</h2>
+<h4>1. My Name is {{ dynName }}</h4>
+
+<br /><br />
+<h4>1. We can use expression in string interpolation</h4>
+{{ 5 + 9 }}
+
+<br /><br />
+<h4>2. We can also use string concenate</h4>
+{{ "Welcome " + dynName }}
+
+<br /><br />
+<h4>3. we can also use javaScript Properties</h4>
+{{ dynName.length }}
+
+<br /><br />
+<h4>We can also use javaScript inbuild Methods</h4>
+{{ dynName.toUpperCase() }} <br />
+{{ dynName.toLocaleLowerCase() }} <br />
+{{ dynName.trim() }} <br />
+
+<br /><br />
+<h4>we can also use custom methods</h4>
+{{ myMethod() }}
+
+<br /><br />
+<h3>we can also use turnery conditional operators</h3>
+<h4>
+  -if/else //so if appStatus is true in comp.ts file it will show online if
+  false offline
+</h4>
+My App Status Is {{ appStatus ? "Online" : "Offline" }}
+
+<br /><br />
+<h4>We can do same above example usin property</h4>
+My App status Is {{ appStatus ? status1 : status2 }}
+
+<br /><br />
+
+
+<h2>Property binding</h2>
+<br><br>
+
+<h4>1. Input we will use to understand. Initial stringIntepolation</h4>
+<input type="text" 
+name="" 
+id=""
+value="{{dynName}}"
+>
+
+<br><br>
+<h4>2. Propertybinding.we use square bracket for attribute</h4>
+<input type="text" 
+name="" 
+id=""
+[value]="dynName"
+>
+
+<br><br>
+<h4>3. Other way of Propertybinding. bind hyphen. bind-value</h4>
+<input type="text" 
+name="" 
+id=""
+bind-value="dynName"
+>
+
+
+<br><br>
+<h4>4. disabled="true" wont work. [disable]=true or [disable]:false will work.app-databind<br>
+So disable attribute we wont be able to use String Interpolation <br>
+It wont work as String Interpolation only works with String Data type <br>
+Same if we try with Property binding it will work</h4>
+<input type="text" 
+[disabled]=true
+name="" 
+id=""
+bind-value="dynName"
+>
+
+
+<h4>5. Hidden Attribute`.hidden-true We can use only property binding</h4>
+    <input type="text" 
+    [disabled]=true
+    [hidden]=true
+    name="" 
+    id=""
+    [value]="dynName"
+    > 
+
+
+    <br><br>
+<h4>6. Hidden Attribute`. using dynamic -hidden/disable-falsefrom ts file We can use only property binding</h4>
+<input type="text" 
+[disabled]="enable"
+[hidden]="enable"
+name="" 
+id=""
+[value]="dynName"
+> 
+
+
+<br><br>
+<h4>7. Turner Operator in Property binding  value </h4>
+<input type="text"
+[disabled]="enable"
+[hidden]="enable"
+name="" 
+id=""
+[value]="appStatus ? status1 : status2"
+> 
