@@ -9,6 +9,7 @@ import { Textsection1Component } from './myContainer/textsection1/textsection1.c
 import { Textsection2Component } from './myContainer/textsection2/textsection2.component';
 import { DatabindComponent } from './databind/databind.component';
 import { ClassstyleComponent } from './databind/classstyle/classstyle.component';
+import { EventbindingComponent } from './databind/eventbinding/eventbinding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ClassstyleComponent } from './databind/classstyle/classstyle.component'
     Textsection1Component,
     Textsection2Component,
     DatabindComponent,
-    ClassstyleComponent
+    ClassstyleComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule
