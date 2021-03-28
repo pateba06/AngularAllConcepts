@@ -10,6 +10,7 @@ import { Textsection2Component } from './myContainer/textsection2/textsection2.c
 import { DatabindComponent } from './databind/databind.component';
 import { ClassstyleComponent } from './databind/classstyle/classstyle.component';
 import { EventbindingComponent } from './databind/eventbinding/eventbinding.component';
+import { TemplatevariablelearningComponent } from './databind/templatevariablelearning/templatevariablelearning.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EventbindingComponent } from './databind/eventbinding/eventbinding.comp
     Textsection2Component,
     DatabindComponent,
     ClassstyleComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TemplatevariablelearningComponent
   ],
   imports: [
     BrowserModule
