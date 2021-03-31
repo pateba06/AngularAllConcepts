@@ -1,0 +1,74 @@
+<h1>Learning ngIf Else Then</h1>
+<h2>There are three types of Directives<br /></h2>
+<hr />
+<li>
+  <ul>
+    Component Directives
+    <ul>
+      Directives With Own Component
+    </ul>
+  </ul>
+  <ul>
+    Structural Directives
+    <span>Manipulating the Dom Elements</span>
+    <ol>
+      ngIf
+    </ol>
+    <ol>
+      ngFor
+    </ol>
+    <ol>
+      ngSwitch
+    </ol>
+  </ul>
+  <ul>
+    Attribute Directives
+    <span>Changes the look and behavior of dom</span>
+    <ol>
+      ngStyle
+    </ol>
+    <ol>
+      ngClass
+    </ol>
+  </ul>
+</li>
+<hr />
+<h1>ngIf</h1>
+<hr />
+
+<h1>Example 1:ngIf lse Refrence block</h1>
+<div class="container">
+  <button class="btn btn-success" (click)="onCreateBlock()">
+    create block
+  </button>
+  <br /><br />
+  <div *ngIf="isValid; then thenBlock; else elseBlock">
+    Block has been created
+  </div>
+  <ng-template #thenBlock>
+    <div>Block has been Created and block name is my block</div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div>No Block has been created</div>
+  </ng-template>
+</div>
+<hr />
+
+<h1>ngSwitch + $event we will need Form-control</h1>
+<hr />
+<div class="container">
+  <div class="col-md-4">
+    <select class="form-control" (change)="getProductval($event)" >
+      <option value="Laptop">Latop</option>
+      <option value="Mobile">Mobile</option>
+      <option value="TV">TV</option>
+      <option value="Washing Machine">Washing Machine</option>
+    </select>
+  </div>
+  <div class="col-md-12" [ngSwitch]="selectedProducts">
+    <h2 class="text-success" *ngSwitchCase="'Laptop'" >Laptop</h2>
+    <h2 class="text-success" *ngSwitchCase="'Mobile'" >Mobile</h2>
+    <h2 class="text-success" *ngSwitchCase="'TV'" >Tv</h2>
+    <h2 class="text-success" *ngSwitchCase="'Washing Machine'" >Washing Machine</h2>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<h1>Push and Splice Using ngFor</h1>
+<h2>We will create list add and delete item using ngFor</h2>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!--Create Input , and Template Reference variable which will use on click event-->
+      <input type="text" name="" #uname class="form-control" placeholder="User Name">
+    </div>
+    <div class="col-md-3">
+      <!--Using uname T refrence variable to pass method-->
+      <button class="btn btn-success" (click)="onCreateUser(uname)">Create User</button>
+    </div>
+    <div class="col-md-3">
+      <!--Using uname T refrence variable to pass method and on click it will
+      triger splice method which will remove from array-->
+      <button class="btn btn-danger" (click)="onRemoveUser()">Delete User</button>
+    </div>
+  </div>
+  
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-10">
+      <table class="table">
+        <thead class="thead-dark">
+        <tr>
+          <th> User Name</th>
+          <th> Remove</th>
+        </tr>
+      
+      </thead>
+      <tbody >
+        <!-- *ngFor method-->
+        <tr *ngFor="let user of users; index as i">
+          <!--calling from array defined in ts file  -->
+          <td> {{user.name}}</td> 
+          <!-- We will use index and on click we will triger the index in our onRemoveItem -->
+          <td> <button class="btn btn-danger" (click)="onRemoveItem(i)"> Remove Item </button></td> 
+        </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>
+</div>
