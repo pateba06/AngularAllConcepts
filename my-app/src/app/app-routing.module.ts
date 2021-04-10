@@ -8,6 +8,9 @@ import { RouterModule, Routes } from '@angular/router';
 //will make constant appRoutes and import Routes in module.ts
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { ProductComponent } from './product/product.component';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
 
 
 const appRoutes:Routes=[
@@ -17,6 +20,9 @@ const appRoutes:Routes=[
   { path:'learning', component:LearnngifelsethenComponent},
   { path:'ngfor', component:NgforlearningComponent},
   { path:'pushandslice', component:PushslicengforComponent},
+  { path:'product', component:ProductComponent},
+  { path:'ngcontent', component:NgcontentComponent},
+  { path:'ngcontainer', component:NgcontainerComponent},
   { path:'**', component:NotfoundComponent} // wild card route
 ]
 

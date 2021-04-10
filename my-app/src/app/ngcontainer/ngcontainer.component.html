@@ -1,0 +1,9 @@
+<h1>ngContainer example</h1>
+
+<!--ng-container removes unecessary div. and we want to use multiple directive is good
+to use ng-container-->
+<ng-container *ngIf="statusOnline">
+  <div *ngFor="let pro of products">
+    {{pro.name}}
+  </div>
+</ng-container>

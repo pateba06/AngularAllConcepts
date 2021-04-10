@@ -14,6 +14,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { CardcontentComponent } from './ngcontent/cardcontent/cardcontent.component';
+import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
 
 
 
@@ -26,10 +29,12 @@ import { AppRoutingModule } from './app-routing.module';
       PushslicengforComponent,
       RoutelearningComponent,
       NotfoundComponent,
-      LoginpageComponent
+      LoginpageComponent,
+      NgcontentComponent,
+      CardcontentComponent,
+      NgcontainerComponent
    ],
    imports: [
-
 	 BrowserModule,
 	 FormsModule,
 	 AppRoutingModule
