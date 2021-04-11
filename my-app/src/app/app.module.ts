@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
 import { CardcontentComponent } from './ngcontent/cardcontent/cardcontent.component';
 import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 
 
@@ -32,7 +34,9 @@ import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
       LoginpageComponent,
       NgcontentComponent,
       CardcontentComponent,
-      NgcontainerComponent
+      NgcontainerComponent,
+      ParentComponent,
+      ChildComponent
    ],
    imports: [
 	 BrowserModule,
