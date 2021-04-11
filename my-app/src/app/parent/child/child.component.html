@@ -1,1 +1,9 @@
-<p>child works!</p>
+<h1>I am From Child Component</h1>
+<label for="">Child Text</label>
+<input type="text" placeholder="{{placeholderText}}" >
+<div class="card">
+    <div class="card-body addto">
+   <h1 *ngIf="!selectlanguage">Which Language you want to learn</h1>
+   <h1 *ngIf="selectlanguage">We Are Going to Learn {{selectLearning}}</h1>
+   <button  type="submit" class="btn-success" (click)="addToLearningList()"> Add to Learning List</button>
+    </div>

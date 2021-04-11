@@ -1,54 +1,51 @@
 <h1>I am Parent Element</h1>
-
-<div class="card">
-    <div class="card-body">
-      <h1 style="color: red" *ngIf=selectedLanguage>{{selectedLanguage}} is Added in my Learning List</h1>
-      <button type="submit" class="btn-danger">Checkout</button>
-    </div>
+<!-- <label>Parent Text</label>
+<input type="text" placeholder="Subject" [value]="myval"> -->
+<!-- <div class="card">
+  <div class="card-body">
+    <h1 style="color: red" *ngIf=selectedLanguage>{{selectedLanguage}} is Added in my Learning List</h1>
+    <button type="submit" class="btn-danger">Checkout</button>
   </div>
+</div> -->
 <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Let's Learn Html</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <button type="submit" class="btn-success" (click)="addToLearn('html')" > Html</button>
-        </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Let's Learn Html</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <button type="submit" class="btn-success" (click)="addToLearn('html')"> Html</button>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Lets Learn Bootstrap</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <button  type="submit" class="btn-success" (click)="addToLearn('bootstrap')"> Bootstrap</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Lets Learn CSS</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <button  type="submit" class="btn-success" (click)="addToLearn('CSS')"> CSS</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Lets learn Angular</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <button  type="submit" class="btn-success" (click)="addToLearn('angular')"> Angular</button>
-          </div>
-        </div>
-      </div>
   </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lets Learn Bootstrap</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <button type="submit" class="btn-success" (click)="addToLearn('bootstrap')"> Bootstrap</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lets Learn CSS</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <button type="submit" class="btn-success" (click)="addToLearn('CSS')"> CSS</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lets learn Angular</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <button type="submit" class="btn-success" (click)="addToLearn('angular')"> Angular</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="card">
-    <div class="card-body addto">
-   <h1 *ngIf="!selectlanguage">Which Language you want to learn</h1>
-   <h1 *ngIf="selectlanguage">We Are Going to Learn {{selectLearning}}</h1>
-   <button  type="submit" class="btn-success" (click)="addToLearningList()"> Add to Learning List</button>
-    </div>
-  </div>
+<hr style="height:30px">
+<!-- <app-child [placeholderText]="mytext"></app-child> -->
+<app-child [selectlanguage]="selectlanguage" [selectLearning]="selectLearning"></app-child>
