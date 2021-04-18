@@ -1,0 +1,17 @@
+<p>
+  learnservices works!
+</p>
+<button (click)=btnclick()>Onclickcallservice</button>
+<hr>
+<button (click)=testservicefunction()>Onclickcall Injectable service</button>
+<h1>{{product}}</h1>
+<h1>{{mobile.type}}</h1>
+<h1>{{mobile.id}}</h1>
+<!-- ng-container we using not to have extra div -->
+<ng-container *ngFor="let emp of employees">
+  
+    <tr>
+ <h1>{{emp.name}}</h1>
+ <h1>{{emp.id}}</h1>
+
+</ng-container>

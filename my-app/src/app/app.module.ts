@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
 import { CardcontentComponent } from './ngcontent/cardcontent/cardcontent.component';
 import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
+import { LearnservicesComponent } from './learnservices/learnservices.component';
+import { TestserviceService } from 'src/appServices/testservice.service';
 
 
 
@@ -32,14 +34,15 @@ import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
       LoginpageComponent,
       NgcontentComponent,
       CardcontentComponent,
-      NgcontainerComponent
+      NgcontainerComponent,
+      LearnservicesComponent
    ],
    imports: [
 	 BrowserModule,
 	 FormsModule,
 	 AppRoutingModule
 	],
-   providers: [],
+   providers: [TestserviceService],
    bootstrap: [
       AppComponent
    ]

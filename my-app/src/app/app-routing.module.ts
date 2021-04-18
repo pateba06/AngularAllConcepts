@@ -11,6 +11,7 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { ProductComponent } from './product/product.component';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
 import { NgcontainerComponent } from './ngcontainer/ngcontainer.component';
+import { LearnservicesComponent } from './learnservices/learnservices.component';
 
 
 const appRoutes:Routes=[
@@ -23,6 +24,7 @@ const appRoutes:Routes=[
   { path:'product', component:ProductComponent},
   { path:'ngcontent', component:NgcontentComponent},
   { path:'ngcontainer', component:NgcontainerComponent},
+  { path:'services', component:LearnservicesComponent},
   { path:'**', component:NotfoundComponent} // wild card route
 ]
 
